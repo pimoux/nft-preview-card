@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #0d192b;
+  font-family: "Outfit", sans-serif;
+}
+
+.card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 87.5%;
+  height: 82vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #14253d;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.card img {
+  border-radius: 0.5rem;
+}
+
+.card .equilibrium-text {
+  margin-top: 1.5rem;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.card .equilibrium-paragraph {
+  margin-top: 0.7rem;
+  color: #8bacda;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.eth-time-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.eth-time-container .eth-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.eth-time-container .eth-container img {
+  height: 18px;
+  margin-top: 1.5px;
+}
+
+.eth-time-container .eth-container p {
+  color: #00fff7;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.eth-time-container .time-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.eth-time-container .time-container img {
+  height: 17px;
+  margin-top: 2px;
+  margin-right: 0.5rem;
+}
+
+.eth-time-container .time-container p {
+  color: #8bacda;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.separator {
+  margin-top: 1rem;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #8bacda;
+}
+
+.creator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+.creator img {
+  width: 33px;
+  height: 33px;
+  border-radius: 100%;
+  border: 1px solid white;
+  margin-right: 1rem;
+}
+
+.creator p {
+  color: #8bacda;
+  font-weight: 300;
+  letter-spacing: -0.25px;
+}
+
+.creator p span {
+  color: white;
+  font-weight: 300;
+}
+/*# sourceMappingURL=style.css.map */
