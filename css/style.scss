@@ -20,16 +20,15 @@ $white: hsl(0, 0%, 100%);
     position: relative;
     background-color: $veryDarkBlue;
     font-family: "Outfit", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 87.5%;
-    height: 82vh;
-    overflow: hidden;
+    position: relative;
+    max-width: 325px;
+    height: 545px;
     display: flex;
     flex-direction: column;
     background-color: $veryDarkBlue2;
@@ -37,19 +36,49 @@ $white: hsl(0, 0%, 100%);
     padding: 1.5rem;
 }
 
-.card img {
+.card .image-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: $veryDarkBlue2;
+}
+
+.card .image-container img {
     border-radius: 0.5rem;   
 }
 
+.card .image-container .image-overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: $cyan;
+    opacity: 0;
+    border-radius: 0.5rem;
+    transition: opacity 0.5s;
+}
+
+.card .image-container .image-overlay img {
+    width: 48px;
+    height: 48px;
+}
+
+.overlay {
+    display: none;
+}
+
 .card .equilibrium-text {
-    margin-top: 1.5rem;
+    margin-top: 1.6rem;
     color: $white;
     font-size: 22px;
     font-weight: 600;
 }
 
 .card .equilibrium-paragraph {
-    margin-top: 0.7rem;
+    margin-top: 0.75rem;
     color: $softBlue;
     font-size: 16px;
     font-weight: 300;
@@ -78,18 +107,19 @@ $white: hsl(0, 0%, 100%);
         img {
             height: 17px;
             margin-top: 2px;
-            margin-right: 0.5rem;
+            margin-right: 0.45rem;
         }
         p {
             color: $softBlue;
             font-size: 15px;
             font-weight: 400;
+            margin-right: 0.15rem;
         }
     }
 }
 
 .separator {
-    margin-top: 1rem;
+    margin-top: 0.95rem;
     width: 100%;
     height: 1px;
     border-bottom: 1px solid $softBlue;
@@ -114,5 +144,16 @@ $white: hsl(0, 0%, 100%);
             color: $white;
             font-weight: 300;
         }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card {
+        width: 24.25%;
+        height: 66.5vh;
+    }
+
+    .card .image-container .image-overlay:hover {
+        opacity: 0.6;
     }
 }
